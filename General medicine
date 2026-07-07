@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Revathi Medical Center</title>
+    <style>
+        body { font-family: Arial, sans-serif; line-height: 1.6; margin: 0; padding: 20px; background-color: #f4f7f6; }
+        header { background: #005a8d; color: white; padding: 20px; text-align: center; }
+        nav { margin: 20px 0; text-align: center; }
+        nav a { margin: 0 15px; color: #005a8d; text-decoration: none; font-weight: bold; }
+        .content { background: white; padding: 20px; border-radius: 8px; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Revathi Medical Center</h1>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="calculator.html">Dosage Calculator</a>
+    </nav>
+    <div class="content">
+        <h2>Welcome to Our Center</h2>
+        <p>Providing compassionate, high-quality healthcare to our community.</p>
+        <p>Contact us: +91 00000 00000</p>
+    </div>
+</body>
+</html>
