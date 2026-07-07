@@ -1,2 +1,30 @@
-# Vidhya-Sree.-V
-​"A clinical utility tool designed to assist healthcare professionals with rapid, accurate emergency medication dosage calculations in high-pressure OT environments."
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Emergency Dosage Calculator</title>
+    <style>
+        body { font-family: sans-serif; padding: 20px; text-align: center; background-color: #f4f4f9; }
+        .container { max-width: 400px; margin: auto; padding: 20px; background: white; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+        input { width: 90%; padding: 10px; margin: 10px 0; font-size: 16px; border: 1px solid #ccc; }
+        button { width: 100%; padding: 10px; font-size: 16px; background-color: #007bff; color: white; border: none; border-radius: 4px; cursor: pointer; }
+        #result { margin-top: 20px; font-weight: bold; color: #333; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Dosage Calc</h1>
+        <p>Patient Weight (kg):</p>
+        <input type="number" id="weight" placeholder="e.g. 70">
+        <button onclick="calculate()">Calculate (5mg/kg)</button>
+        <h2 id="result"></h2>
+    </div>
+
+    <script>
+        function calculate() {
+            let weight = document.getElementById("weight").value;
+            let dose = weight * 5; 
+            document.getElementById("result").innerHTML = "Recommended: " + dose + " mg";
+        }
+    </script>
+</body>
+</html>
